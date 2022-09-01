@@ -1,0 +1,210 @@
+* {
+  margin: 01px;
+  padding: 01px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  /*Font_family*/
+  --caligrafia-title: "Dosis", sans-serif;
+  --caligrafia-parrafos: "Dosis", sans-serif;
+
+  /*color*/
+
+  --crema: #f2f2f2;
+  --celeste: #93bbbf;
+  --naranja: #c58309;
+  --grisclaro: #899b9f;
+  --grisoscuro: #374342;
+  --negro: #0c0d0d;
+
+  /*pading*/
+  --padding: 50px;
+  --padding2: 60px;
+
+  /*font-size*/
+  --text-large: 3.5em;
+  --text-medium: 2.2em;
+  --text-base: 1.6em;
+  --text-small: 1.4em;
+
+  /*spacing*/
+  --spacing-large: 6rem;
+  --spacing-medium: 2.4rem;
+  --spaciong-smal: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bodyindex {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "main main main main main main"
+    "section section section section section section"
+    "pie pie pie pie pie pie";
+  gap: 10px;
+  background-color: var(--crema);
+  padding: 10px;
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding);
+}
+
+.header__logoEstudio {
+  border-radius: 15px;
+}
+
+.header a {
+  color: #357f35;
+}
+
+.header a img {
+  margin: 0px;
+}
+
+.header__nav-ul {
+  display: flex;
+
+  gap: var(--spaciong-smal);
+  margin-left: 50px;
+}
+
+.header__nav-ul li a {
+  color: var(--grisoscuro);
+  font-family: var(--caligrafia-parrafos);
+}
+
+.header__nav-ul li a:hover {
+  background-color: white;
+  border-radius: 10px;
+  height: 10px;
+  width: 70px;
+  transition: 0.5s;
+  font-weight: 300px;
+}
+
+.main {
+  grid-area: main;
+  padding: var(--padding);
+}
+
+.main__div {
+  background-image: url(https://esjur.com/wp-content/uploads/2018/09/esjur-fachada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: auto;
+  margin-top: 30px;
+}
+
+.main__div-parrafo {
+  font-family: var(--caligrafia-parrafos);
+  font-size: var(--text-medium);
+  letter-spacing: 5px;
+  color: var(--crema);
+  word-spacing: 10px;
+}
+
+h1 {
+  font-family: var(--caligrafia-title);
+  font-size: var(--text-large);
+}
+.AreasDePractica {
+  grid-area: section;
+  padding-top: 60px;
+  border-top: var(--naranja);
+  font-size: var(--text-small);
+}
+
+.AreasDePractica__titulo {
+  margin-left: 45%;
+}
+.AreasDePractica__titulo-div {
+  padding: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.AreasDePractica__link {
+  font-family: var(--caligrafia-title);
+  color: var(--naranja);
+  padding: 25px;
+}
+
+.AreasDePractica__titulo-divImg {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.pie {
+  grid-area: pie;
+  padding-top: var(--padding);
+  padding: var(--padding2);
+  background-color: var(--grisclaro);
+}
+
+iframe {
+  width: 100%;
+}
+
+.pie__iconosDeContacto {
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-large);
+}
+
+h2 {
+  font-family: var(--caligrafia-title);
+  font-size: var(--caligrafia-title);
+}
+
+@media screen and (max-width: 800px) {
+  .body {
+    background-color: var(--grisclaro);
+    display: flex;
+    flex-direction: column;
+  }
+  .AreasDePractica__titulo-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .pie {
+    background-color: var(--crema);
+  }
+}
+
+/* EQUIPO */
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat (12, 1fr);
+  grid-template-rows: repeat (12, 1fr);
+  gap: var(--spaciong-smal);
+}
+
+.grid__parrafo {
+  grid-colum: 1/2;
+  grid-row: ;
+}
+.grid__galeria {
+  grid-colum: 2/4;
+}
