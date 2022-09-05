@@ -58,7 +58,7 @@ a {
 
 .header {
   grid-area: header;
-  background-color: #f2f2f2;
+  background-color: #d1cccc;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,7 +79,6 @@ a {
 
 .header__nav-ul {
   display: flex;
-
   gap: var(--spaciong-smal);
   margin-left: 50px;
 }
@@ -176,35 +175,79 @@ h2 {
 }
 
 @media screen and (max-width: 800px) {
-  .body {
+  .bodyindex {
     background-color: var(--grisclaro);
     display: flex;
     flex-direction: column;
   }
-  .AreasDePractica__titulo-div {
+  .header {
+    background-color: #b2adad;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding);
+  }
+
+  .header__nav-ul {
+    height: 200px;
+    width: 200px;
+  }
+
+  .galeria {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
   }
 
   .pie {
-    background-color: var(--crema);
+    grid-area: pie;
+    padding-top: var(--padding);
+    padding: var(--padding2);
+    background-color: var(--grisclaro);
   }
 }
 
 /* EQUIPO */
 
-.grilla {
+.galeria {
   display: grid;
-  grid-template-columns: repeat (12, 1fr);
-  grid-template-rows: repeat (12, 1fr);
-  gap: var(--spaciong-smal);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 1fr 1fr 1fr;
 }
 
 .grid__parrafo {
-  grid-colum: 1/2;
-  grid-row: ;
+  grid-row: 1/2;
+  grid-column: 1/3;
+  z-index: 10;
+  background-color: #f2f2f2;
 }
-.grid__galeria {
-  grid-colum: 2/4;
+
+.grid__parrafo-Img {
+  width: 100%;
+  grid-column: 2/4;
+  grid-row: 1/3;
+  z-index: 2;
+}
+
+.galeria1 {
+  width: 100%;
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+.galeria2 {
+  width: 100%;
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+.galeria3 {
+  width: 100%;
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+
+.galeria4 {
+  width: 100%;
+  grid-row: 4/5;
+  grid-column: 3/4;
 }
