@@ -15,11 +15,12 @@ html {
   --caligrafia-parrafos: "Dosis", sans-serif;
 
   /*color*/
-
+  --blanco: #f0f6f6;
   --crema: #f2f2f2;
   --celeste: #93bbbf;
   --naranja: #c58309;
   --grisclaro: #899b9f;
+  --grismasclaro: #f2f2f2;
   --grisoscuro: #374342;
   --negro: #0c0d0d;
 
@@ -59,6 +60,11 @@ a {
   padding: 10px;
   height: 100vh;
 }
+h2 {
+  font-family: var(--caligrafia-title);
+  font-size: var(--caligrafia-title);
+  margin-bottom: 40px;
+}
 
 .header {
   grid-area: header;
@@ -67,6 +73,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: var(--padding);
+  height: 150px;
 }
 
 .header__logoEstudio {
@@ -91,6 +98,7 @@ a {
 .header__nav-ul li a {
   color: var(--grisoscuro);
   font-family: var(--caligrafia-parrafos);
+  font-size: large;
 }
 
 .header__nav-ul li a:hover {
@@ -105,6 +113,11 @@ a {
 .header__nav-ullogoWhatsapp {
   padding: 0px;
 }
+
+/*.inconoWhtsApp {
+  transform: translatey(200px);
+  transition: 1s;
+}*/
 
 .main {
   grid-area: main;
@@ -131,6 +144,8 @@ a {
 h1 {
   font-family: var(--caligrafia-title);
   font-size: var(--text-large);
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .AreasDePractica {
   grid-area: section;
@@ -171,16 +186,16 @@ iframe {
   width: 100%;
 }
 
+.footer {
+  background-color: var(--grisclaro);
+  height: 200px;
+  width: auto;
+}
 .pie__iconosDeContacto {
   padding: 70px;
   display: flex;
   justify-content: center;
   gap: var(--spacing-large);
-}
-
-h2 {
-  font-family: var(--caligrafia-title);
-  font-size: var(--caligrafia-title);
 }
 
 /* EQUIPO */
@@ -198,7 +213,13 @@ h2 {
   background-color: #f2f2f2;
   width: 400px;
   height: auto;
-  opacity: 50%;
+  opacity: 60%;
+}
+.grid__parrafo p {
+  font-size: 15px;
+  font-family: var(--caligrafia-parrafos);
+  letter-spacing: 5px;
+  color: black;
 }
 
 .grid__parrafo-Img {
@@ -236,6 +257,100 @@ h2 {
   padding-top: 20px;
 }
 
+/*contacto*/
+
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr 1fr 150px;
+}
+.contacto__leyenda {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  z-index: 10;
+  background-color: var(--crema);
+  width: 500px;
+  height: 200px;
+  opacity: 60%;
+}
+
+.contacto__leyenda p {
+  font-size: 20px;
+  font-family: var(--caligrafia-parrafos);
+  letter-spacing: 5px;
+  color: var(--negro);
+  font-weight: 100px;
+}
+
+.contacto__img {
+  grid-row: 2/5;
+  grid-column: 2/4;
+  z-index: 2;
+  width: 600px;
+  height: 500px;
+}
+.contacto__form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  grid-row: 3/5;
+  grid-column: 4/6;
+  text-align: center;
+  background-color: #adb3b3;
+  height: 600px;
+  width: 500px;
+}
+.contacto__form-form {
+  font-family: var(--caligrafia-parrafos);
+
+  padding: 40px;
+}
+.form__input {
+  width: 100%;
+  padding: 15px;
+  font-size: 15px;
+  border: none;
+  background-color: var(--grismasclaro);
+  margin-top: 15px;
+}
+.form__input:focus {
+  background-color: #adb3b3;
+}
+
+.textarea {
+  min-height: 150px;
+  width: 100%;
+  font-size: 15px;
+  border: none;
+  background-color: var(--crema);
+  margin-top: 25px;
+  font-weight: 100px;
+}
+
+.textarea:focus {
+  background-color: #adb3b3;
+}
+
+.button {
+  width: 25%;
+  height: 40px;
+  border: none;
+  background-color: var(--naranja);
+  border-radius: 5px;
+  padding: 0, 5rem;
+  cursor: pointer;
+}
+
+.button:active {
+  padding: 1rem;
+}
+/*
+.button:hover {
+  background-color: rgb(144, 143, 137);
+  padding: 1rem;
+}*/
+
+/*@media*/
 @media screen and (max-width: 800px) {
   .bodyindex {
     background-color: var(--grisclaro);
@@ -244,7 +359,7 @@ h2 {
   }
 
   body {
-    background-color: var(--grisclaro);
+    background-color: var(--grismasclaro);
     display: flex;
     flex-direction: column;
   }
@@ -287,7 +402,7 @@ h2 {
     flex-wrap: wrap;
     flex-direction: column;
   }
-
+  /* Equipo*/
   .galeria1,
   .galeria2,
   .galeria3,
@@ -301,5 +416,22 @@ h2 {
     font-weight: bold;
     min-width: 500px;
     flex-basis: 400px;
+  }
+  /* contacto*/
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+  }
+  .contacto__leyenda {
+    margin-top: 100px;
+    background-color: var(--grisclaro);
+    opacity: 50%;
+  }
+  .contacto__form {
+    margin-top: 200px;
+    margin-left: 20px;
+    margin-bottom: 100px;
   }
 }
