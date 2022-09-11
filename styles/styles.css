@@ -62,7 +62,7 @@ a {
 }
 h2 {
   font-family: var(--caligrafia-title);
-  font-size: var(--caligrafia-title);
+  font-size: var(--text-base);
   margin-bottom: 40px;
 }
 
@@ -78,10 +78,8 @@ h2 {
 
 .header__logoEstudio {
   border-radius: 15px;
-}
-
-.header a {
-  color: #357f35;
+  width: 200px;
+  height: auto;
 }
 
 .header a img {
@@ -114,10 +112,10 @@ h2 {
   padding: 0px;
 }
 
-/*.inconoWhtsApp {
-  transform: translatey(200px);
+.inconoWhtsApp {
   transition: 1s;
-}*/
+  cursor: pointer;
+}
 
 .main {
   grid-area: main;
@@ -144,7 +142,7 @@ h2 {
 h1 {
   font-family: var(--caligrafia-title);
   font-size: var(--text-large);
-  margin-top: 40px;
+  margin-top: 50px;
   margin-bottom: 40px;
 }
 .AreasDePractica {
@@ -161,18 +159,36 @@ h1 {
   padding: 100px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  font-family: var(--caligrafia-title);
 }
 
-.AreasDePractica__link {
+h3 {
   font-family: var(--caligrafia-title);
-  color: var(--naranja);
-  padding: 25px;
 }
 
 .AreasDePractica__titulo-divImg {
-  display: flex;
   margin-bottom: 10px;
+}
+
+.AreasDePractica__link {
+  font-family: var(--caligrafia-parrafos);
+  color: var(--naranja);
+  padding: 55px;
+}
+
+.AreasDePractica__titulo-div2 img {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 1s;
+}
+
+.AreasDePractica__titulo-div2 img:hover {
+  height: 200px;
+  width: 200px;
 }
 
 .pie {
@@ -189,13 +205,27 @@ iframe {
 .footer {
   background-color: var(--grisclaro);
   height: 200px;
-  width: auto;
+  width: 100%;
+  margin-top: 200px;
 }
 .pie__iconosDeContacto {
   padding: 70px;
   display: flex;
   justify-content: center;
   gap: var(--spacing-large);
+}
+
+.iconoEmail:hover {
+  opacity: 50%;
+}
+.iconoWhatsApp:hover {
+  opacity: 50%;
+}
+.iconoInstagram:hover {
+  opacity: 50%;
+}
+.iconoFacebook:hover {
+  opacity: 50%;
 }
 
 /* EQUIPO */
@@ -251,6 +281,15 @@ iframe {
   grid-column: 3/4;
 }
 
+.galeria1__img:hover {
+  transition: 0, 5s;
+}
+
+.galeria1__img:hover {
+  border: solid var(--naranja) 5px;
+  opacity: 90%;
+}
+
 .pie__titulo {
   display: flex;
   justify-content: center;
@@ -289,6 +328,7 @@ iframe {
   width: 600px;
   height: 500px;
 }
+
 .contacto__form {
   display: flex;
   flex-wrap: wrap;
@@ -302,6 +342,7 @@ iframe {
 }
 .contacto__form-form {
   font-family: var(--caligrafia-parrafos);
+  box-shadow: 4px 4px rgb(48, 46, 46);
 
   padding: 40px;
 }
@@ -312,7 +353,9 @@ iframe {
   border: none;
   background-color: var(--grismasclaro);
   margin-top: 15px;
+  box-shadow: 4px 4px rgb(48, 46, 46);
 }
+
 .form__input:focus {
   background-color: #adb3b3;
 }
@@ -325,54 +368,89 @@ iframe {
   background-color: var(--crema);
   margin-top: 25px;
   font-weight: 100px;
+  box-shadow: 4px 4px rgb(48, 46, 46);
+  font-family: var(--caligrafia-parrafos);
+  padding: 15px;
 }
 
 .textarea:focus {
   background-color: #adb3b3;
 }
 
-.button {
-  width: 25%;
-  height: 40px;
+.btn {
+  margin-top: 10px;
+  height: 50px;
+  width: 110px;
   border: none;
-  background-color: var(--naranja);
+  background-color: rgb(201, 189, 189);
   border-radius: 5px;
-  padding: 0, 5rem;
   cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+  box-shadow: 4px 4px rgb(48, 46, 46);
+  letter-spacing: 0.1rem;
 }
 
-.button:active {
-  padding: 1rem;
+.btn:hover {
+  transition: all 1s;
+  animation-duration: 4s;
+  animation-name: animacionbtn;
+  animation-iteration-count: infinite;
 }
-/*
-.button:hover {
-  background-color: rgb(144, 143, 137);
-  padding: 1rem;
-}*/
+
+/*.btn:hover {
+  background-color: rgb(144, 143, 137);*/
+
+@keyframes animacionbtn {
+  0% {
+    background-color: rgb(201, 189, 189);
+    color: #0c0d0d;
+  }
+  25% {
+    background-color: rgb(190, 190, 169);
+    color: #374342;
+  }
+  50% {
+    background-color: rgb(85, 85, 88);
+    color: #d1cccc;
+  }
+  100% {
+    background-color: rgb(7, 7, 7);
+    color: #f2f2f2;
+    box-shadow: 4px 4px rgb(83, 81, 81);
+  }
+}
 
 /*@media*/
-@media screen and (max-width: 800px) {
-  .bodyindex {
-    background-color: var(--grisclaro);
-    display: flex;
-    flex-direction: column;
-  }
 
-  body {
+@media screen and (max-width: 375px) {
+  .bodyindex {
     background-color: var(--grismasclaro);
     display: flex;
     flex-direction: column;
+  }
+  .body {
+    width: 667px;
+  }
+
+  .header__nav {
+    display: none;
   }
 
   .header {
     background-color: #b2adad;
     display: flex;
     flex-wrap: wrap;
+    width: 665px;
+    height: 200px;
     justify-content: space-between;
     align-items: center;
     padding: var(--padding);
   }
-
+  .header__logoEstudio {
+    margin-top: 0em;
+  }
   .header__nav {
     height: 200px;
     width: 200px;
@@ -384,6 +462,7 @@ iframe {
     border-top: var(--naranja);
     font-size: var(--text-small);
     align-items: center;
+    max-width: 50%;
   }
 
   .pie {
@@ -393,8 +472,22 @@ iframe {
     background-color: var(--grisclaro);
   }
 
+  .iconoEmail {
+    background-color: var(--grisclaro);
+    border-radius: 50%;
+    border: solid black;
+  }
+
   .AreasDePractica__link {
     color: var(--crema);
+  }
+  /* Equipo*/
+
+  .body {
+    background-color: var(--grismasclaro);
+    display: flex;
+    flex-direction: column;
+    background-color: #357f35;
   }
 
   .galeria {
@@ -402,7 +495,7 @@ iframe {
     flex-wrap: wrap;
     flex-direction: column;
   }
-  /* Equipo*/
+
   .galeria1,
   .galeria2,
   .galeria3,
@@ -417,21 +510,95 @@ iframe {
     min-width: 500px;
     flex-basis: 400px;
   }
+
   /* contacto*/
+
   .contacto {
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 200px 1fr 150px 200px;
+    margin-top: 30px;
   }
   .contacto__leyenda {
-    margin-top: 100px;
-    background-color: var(--grisclaro);
-    opacity: 50%;
+    grid-row: 2/3;
+    grid-column: 1/4;
+    z-index: 10;
+    background-color: var(--crema);
+    width: 500px;
+    height: 200px;
+    opacity: 60%;
+  }
+
+  .contacto__leyenda p {
+    font-size: 20px;
+    font-family: var(--caligrafia-parrafos);
+    letter-spacing: 5px;
+    color: var(--negro);
+    font-weight: 100px;
+  }
+
+  .contacto__img {
+    grid-row: 2/5;
+    grid-column: 1/2;
+    z-index: 2;
+    width: 600px;
+    height: 500px;
   }
   .contacto__form {
-    margin-top: 200px;
-    margin-left: 20px;
-    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    grid-row: 4/6;
+    grid-column: 1/2;
+    text-align: center;
+    background-color: #adb3b3;
+    height: 600px;
+    width: 500px;
+    margin-left: 30px;
+  }
+  .contacto__form-form {
+    font-family: var(--caligrafia-parrafos);
+
+    padding: 40px;
+  }
+  .form__input {
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    background-color: var(--grismasclaro);
+    margin-top: 15px;
+  }
+  .form__input:focus {
+    background-color: #adb3b3;
+  }
+
+  .textarea {
+    min-height: 150px;
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    background-color: var(--crema);
+    margin-top: 25px;
+    font-weight: 100px;
+  }
+
+  .textarea:focus {
+    background-color: #adb3b3;
+  }
+
+  .btn {
+    width: 25%;
+    height: 40px;
+    border: none;
+    background-color: var(--naranja);
+    border-radius: 5px;
+    padding: 0, 5rem;
+    cursor: pointer;
+    transition: all 1s;
+  }
+
+  .btn:hover {
+    background-color: #adb3b3;
   }
 }
