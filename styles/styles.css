@@ -48,7 +48,7 @@ a {
   text-decoration: none;
 }
 
-.bodyindex {
+/*.bodyindex {
   display: grid;
   grid-template-areas:
     "header header header header header header"
@@ -59,7 +59,7 @@ a {
   background-color: var(--crema);
   padding: 10px;
   height: 100vh;
-}
+}*/
 h2 {
   font-family: var(--caligrafia-title);
   font-size: var(--text-base);
@@ -74,6 +74,7 @@ h2 {
   align-items: center;
   padding: var(--padding);
   height: 150px;
+  width: 100%;
 }
 
 .header__logoEstudio {
@@ -145,6 +146,8 @@ h1 {
   margin-top: 50px;
   margin-bottom: 40px;
 }
+
+/*
 .AreasDePractica {
   grid-area: section;
   padding-top: 60px;
@@ -177,18 +180,19 @@ h3 {
   padding: 55px;
 }
 
-.AreasDePractica__titulo-div2 img {
-  height: 100px;
-  width: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 1s;
-}
+
 
 .AreasDePractica__titulo-div2 img:hover {
   height: 200px;
   width: 200px;
+}
+
+*/
+
+.AreasDePractica__titulo-div2 img {
+  height: 50px;
+  width: 50px;
+  border: #0c0d0d soli;
 }
 
 .pie {

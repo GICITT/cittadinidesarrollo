@@ -8,39 +8,82 @@
     <link rel="preconnect" href="https://fonts.gst atic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="shortcut icon" href="./img/logo.png" />
     <title>Estudio Jurídico</title>
   </head>
   <body class="bodyindex">
-    <header class="header">
-      <a href="./index.html">
-        <img
-          class="header__logoEstudio"
-          src="./img/logo.png"
-          alt="logo del estudio"
-        />
-      </a>
-      <nav class="header__nav">
-        <ul class="header__nav-ul">
-          <li><a href="./index.html">INICIO</a></li>
-          <li><a href="#areasDePractica">ÁREAS DE PRÁCTICA</a></li>
-          <li><a href="./pages/equipo.html">EQUIPO</a></li>
-          <li><a href="./pages/contacto.html">CONTACTO</a></li>
-        </ul>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <header class="">
+      <nav class="navbar" style="background-color: #e3f2fd">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"
+            ><img src="./img/logo.png" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#areasDePractica"
+                  >Áreas de práctica</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/equipo.html">Equipo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              <a
+                href="https://api.whatsapp.com/send?phone=0123456789&text=Hola, Necesito mas informacion!"
+                target="_blank"
+              >
+                <img
+                  class="inconoWhtsApp"
+                  src="./img/iconoWhatsApp.png"
+                  alt="logo WhatsApp"
+                  width="0px"
+                />
+              </a>
+            </span>
+          </div>
+        </div>
       </nav>
-      <a
-        class="header__iconoDeWhatAppTel"
-        href="https://api.whatsapp.com/send?phone=0123456789&text=Hola, Necesito mas informacion!"
-        target="_blank"
-      >
-        <img
-          class="inconoWhtsApp"
-          src="./img/iconoWhatsApp.png"
-          alt="logo WhatsApp"
-          width="80px"
-        />
-      </a>
     </header>
     <main class="main">
       <h1>Estudio juridico Cajal & asociados</h1>
@@ -51,39 +94,61 @@
         </p>
       </div>
     </main>
-    <section class="AreasDePractica" id="areasDePractica">
-      <div class="AreasDePractica__titulo"><h3>Áreas de práctica</h3></div>
-      <div class="AreasDePractica__titulo-div">
-        <div class="AreasDePractica__titulo-div2">
-          <a class="AreasDePractica__link" href="./pages/sucesiones.html">
-            <img
-              class="AreasDePractica__titulo-divImg"
-              src="./img/inconoSucesiones.jpg"
-              alt="logosucesiones"
-            />
-            SUCESIONES</a
-          >
+    <div class="text-center mb-5">
+      <h3>Areas de practica</h3>
+    </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col bg-secondary text-white">
+          <div class="d-flex flex-column">
+            <a class="AreasDePractica__link" href="./pages/sucesiones.html">
+              <img
+                class="AreasDePractica__titulo-divImg"
+                src="./img/inconoSucesiones.jpg"
+                alt="logosucesiones"
+                width="100px"
+                height="100px"
+              />
+              <p>SUCESIONES</p>
+            </a>
+          </div>
+          <p>Lorem ipsum bñlasvañslfklskjflskdjfl</p>
+          <img src="./img/suce.jpeg " width="402" height="381" />
         </div>
-        <div class="AreasDePractica__titulo-div2">
-          <a class="AreasDePractica__link" href="./pages/divorcios.html"
-            ><img
-              class="AreasDePractica__titulo-divImg"
-              src="./img/iconoDivorcio.jpeg"
-              alt=" logolaboral"
-            />DIVORCIOS</a
-          >
+        <div class="col bg-secondary text-white">
+          <div class="d-flex flex-column">
+            <a class="AreasDePractica__link" href="./pages/divorcios.html"
+              ><img
+                class="img-fluid"
+                src="./img/iconoDivorcio.jpeg"
+                alt=" logolaboral"
+                width="100px"
+                height="100px"
+              />
+              <p>DIVORCIOS</p></a
+            >
+          </div>
+          <p>Lorem ipsum bñlasvañslfklskjflskdjfl</p>
+          <img src="./img/div.jpg" />
         </div>
-        <div class="AreasDePractica__titulo-div2">
-          <a class="AreasDePractica__link" href="./pages/laboral.html"
-            ><img
-              class="AreasDePractica__titulo-divImg"
-              src="./img/iconoLaboral.jpeg"
-              alt=" logolaboral"
-            />LABORAL</a
-          >
+        <div class="col bg-secondary text-white">
+          <div class="d-flex flex-column">
+            <a class="AreasDePractica__link" href="./pages/laboral.html"
+              ><img
+                class="img-fluid"
+                src="./img/iconoLaboral.jpeg"
+                alt=" logolaboral"
+                width="100px"
+                height="100px"
+              />
+              <p>LABORAL</p></a
+            >
+          </div>
+          <p>Lorem ipsum bñlasvañslfklskjflskdjfl</p>
+          <img src="./img/lab.jpg" width="402" height="381" />
         </div>
       </div>
-    </section>
+    </div>
     <footer class="pie">
       <h3>Contactenos</h3>
       <div class="mapa">
