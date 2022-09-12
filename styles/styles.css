@@ -1,4 +1,4 @@
-* {
+ {
   margin: 01px;
   padding: 01px;
   box-sizing: border-box;
@@ -65,6 +65,8 @@ h2 {
   font-size: var(--text-base);
   margin-bottom: 40px;
 }
+
+/*
 
 .header {
   grid-area: header;
