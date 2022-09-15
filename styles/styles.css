@@ -66,8 +66,6 @@ h2 {
   margin-bottom: 40px;
 }
 
-/*
-
 .header {
   grid-area: header;
   background-color: #d1cccc;
@@ -181,14 +179,10 @@ h3 {
   color: var(--naranja);
   padding: 55px;
 }
-
-
-
 .AreasDePractica__titulo-div2 img:hover {
   height: 200px;
   width: 200px;
 }
-
 */
 
 .AreasDePractica__titulo-div2 img {
