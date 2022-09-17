@@ -48,18 +48,6 @@ a {
   text-decoration: none;
 }
 
-/*.bodyindex {
-  display: grid;
-  grid-template-areas:
-    "header header header header header header"
-    "main main main main main main"
-    "section section section section section section"
-    "pie pie pie pie pie pie";
-  gap: 10px;
-  background-color: var(--crema);
-  padding: 10px;
-  height: 100vh;
-}*/
 h2 {
   font-family: var(--caligrafia-title);
   font-size: var(--text-base);
@@ -422,9 +410,11 @@ iframe {
   }
 }
 
+/*DIVOR*/
+
 /*@media*/
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
   .bodyindex {
     background-color: var(--grismasclaro);
     display: flex;
@@ -601,4 +591,6 @@ iframe {
   .btn:hover {
     background-color: #adb3b3;
   }
+
+  /* DIVORCIO*/
 }
