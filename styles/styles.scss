@@ -1,1 +1,12 @@
+.header {
+  height: 200px;
+  background-color: var(--bs-cyan);
+  nav {
+    border: solid black 1px;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
 @import "../lbs/bootstrap/scss/bootstrap";

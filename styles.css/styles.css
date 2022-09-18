@@ -1,4 +1,15 @@
 @charset "UTF-8";
+.header {
+  height: 200px;
+  background-color: var(--bs-cyan);
+}
+.header nav {
+  border: solid black 1px;
+}
+.header nav:hover {
+  font-weight: bold;
+}
+
 /*!
  * Bootstrap  v5.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
