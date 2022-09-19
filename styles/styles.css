@@ -35,57 +35,6 @@ h2 {
   margin-bottom: 40px;
 }
 
-.header {
-  grid-area: header;
-  background-color: #d1cccc;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--padding);
-  height: 150px;
-}
-
-.header__logoEstudio {
-  border-radius: 15px;
-  width: 200px;
-  height: auto;
-}
-
-.header a img {
-  margin: 0px;
-}
-
-.header__nav-ul {
-  display: flex;
-  gap: var(--spaciong-smal);
-  margin-left: 50px;
-  justify-content: center;
-}
-
-.header__nav-ul li a {
-  color: var(--grisoscuro);
-  font-family: var(--caligrafia-parrafos);
-  font-size: large;
-}
-
-.header__nav-ul li a:hover {
-  background-color: white;
-  border-radius: 10px;
-  height: 10px;
-  width: 70px;
-  transition: 0.5s;
-  font-weight: 300px;
-}
-
-.header__nav-ullogoWhatsapp {
-  padding: 0px;
-}
-
-.inconoWhtsApp {
-  transition: 1s;
-  cursor: pointer;
-}
-
 .main {
   grid-area: main;
   padding: var(--padding);

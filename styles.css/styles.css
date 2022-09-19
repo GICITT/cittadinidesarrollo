@@ -1,1 +1,31 @@
-/*# sourceMappingURL=styles.css.map */
+.header {
+  grid-area: header;
+  background-color: #d1cccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding);
+  height: 150px;
+}
+.header .header__logoEstudio {
+  border-radius: 15px;
+  width: 200px;
+  height: auto;
+}
+.header .header__logoEstudio .header a img {
+  margin: 0px;
+}
+.header .header__logoEstudio .header__nav .header__nav-ul {
+  display: flex;
+  gap: var(--spaciong-smal);
+  margin-left: 50px;
+  justify-content: center;
+}
+.header .header__logoEstudio .header__nav .header__nav-ul .header__nav-ul li ahover {
+  background-color: white;
+  border-radius: 10px;
+  height: 10px;
+  width: 70px;
+  transition: 0.5s;
+  font-weight: 300px;
+}/*# sourceMappingURL=styles.css.map */
