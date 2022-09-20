@@ -18,12 +18,12 @@
     <link rel="shortcut icon" href="./img/logo.png" />
     <title>Estudio Jurídico</title>
   </head>
-  <body class="body">
+  <body>
     <header class="header">
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html"
-            ><img src="./img/logo.png" />
+            ><img class="header__logoEstudio" src="./img/logo.png" />
           </a>
           <button
             class="navbar-toggler"
@@ -36,7 +36,10 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div
+            class="collapse navbar-collapse divNavbar"
+            id="navbarSupportedContent"
+          >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
@@ -81,7 +84,7 @@
         </p>
       </div>
     </main>
-    <div class="text-center mb-5">
+    <div class="text-center mb-5 areasPractica">
       <h3 class="text-decoration-underline text-secondary">
         Areas de practica
       </h3>
@@ -102,7 +105,7 @@
             </a>
           </div>
           <p>Lorem ipsum bñlasvañslfklskjflskdjfl</p>
-          <img class="pb-3" src="./img/suce.jpeg " width="402" height="381" />
+          <img class="pb-3 imgAreas" src="./img/suce.jpeg " />
         </div>
         <div class="col bg-secondary text-white">
           <div class="d-flex flex-column">
@@ -118,7 +121,7 @@
             >
           </div>
           <p>Lorem ipsum bñlasvañslfklskjflskdjfl</p>
-          <img class="pb-3" src="./img/div.jpg" width="402" height="381" />
+          <img class="pb-3 imgAreas" src="./img/div.jpg" />
         </div>
         <div class="col bg-secondary text-white">
           <div class="d-flex flex-column">
@@ -134,7 +137,7 @@
             >
           </div>
           <p>Lorem ipsum bñlasvañslfklskjflskdjfl</p>
-          <img class="pb-3" src="./img/lab.jpg" width="402" height="381" />
+          <img class="pb-3 imgAreas" src="./img/lab.jpg" />
         </div>
       </div>
     </div>
@@ -142,9 +145,8 @@
       <h3 class="ps-3 py-3 text-white">Contactenos</h3>
       <div class="mapa">
         <iframe
+          class="mapaIframe"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9459990521946!2d-58.3887637!3d-34.605526999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac40a05453d%3A0x9829ca3109f60ab6!2sSarmiento%201562%2C%20C1070%20CABA!5e0!3m2!1sen!2sar!4v1660859785111!5m2!1sen!2sar"
-          width="600"
-          height="450"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
@@ -182,12 +184,13 @@
         </a>
 
         <svg
+          id="iconoFooter"
           xmlns="http://www.w3.org/2000/svg"
-          width="60"
-          height="60"
           fill="red"
           class="bi bi-envelope"
           viewBox="0 0 16 16"
+          width="60px"
+          height="60px"
         >
           <path
             d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"

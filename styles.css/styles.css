@@ -1,9 +1,6 @@
 .header {
   grid-area: header;
-  background-color: #d1cccc;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #053849;
   padding: var(--padding);
   height: 150px;
 }
@@ -11,21 +8,40 @@
   border-radius: 15px;
   width: 200px;
   height: auto;
+  border: black solid 1px;
 }
-.header .header__logoEstudio .header a img {
-  margin: 0px;
+
+.main {
+  padding: var(--padding);
 }
-.header .header__logoEstudio .header__nav .header__nav-ul {
-  display: flex;
-  gap: var(--spaciong-smal);
-  margin-left: 50px;
-  justify-content: center;
+.main h1 {
+  font-family: var(--caligrafia-title);
+  margin-top: 20px;
 }
-.header .header__logoEstudio .header__nav .header__nav-ul .header__nav-ul li ahover {
-  background-color: white;
-  border-radius: 10px;
-  height: 10px;
-  width: 70px;
-  transition: 0.5s;
-  font-weight: 300px;
+.main .main__div {
+  background-image: url(https://esjur.com/wp-content/uploads/2018/09/esjur-fachada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-family: var(--caligrafia-parrafos);
+  font-size: 30px;
+  letter-spacing: 5px;
+  color: whitesmoke;
+}
+
+footer .mapaIframe {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 50px;
+}
+
+.imgAreas {
+  width: 350px;
+  height: 400px;
+}
+.imgAreas:hover {
+  opacity: 60%;
 }/*# sourceMappingURL=styles.css.map */

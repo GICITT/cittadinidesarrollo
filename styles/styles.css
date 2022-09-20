@@ -1,33 +1,25 @@
-* {
-  margin: 01px;
-  padding: 01px;
-  box-sizing: border-box;
-  box-sizing: border-box;
-}
+:root {
+  /*Font_family*/
+  --caligrafia-title: "Dosis", sans-serif;
+  --caligrafia-parrafos: "Dosis", sans-serif;
 
-html {
-  scroll-behavior: smooth;
-}
+/*pading*/
+--padding: 50px;
+--padding2: 60px;
 
-ul {
-  list-style: none;
-}
+/*font-size*/
+--text-large: 3.5em;
+--text-medium: 2.2em;
+--text-base: 1.6em;
+--text-small: 1.4em;
+
+/*spacing*/
+--spacing-large: 6rem;
+--spacing-medium: 2.4rem;
+--spaciong-smal: 2rem;
 
 
-.bodyindex {
-  display: grid;
-  grid-template-areas:
-    "header header header header header header"
-    "main main main main main main"
-    "section section section section section section"
-    "pie pie pie pie pie pie";
-  gap: 10px;
-  background-color: var(--crema);
-  padding: 10px;
-  height: 100vh;
-}
-h2 {
-  font-family: var(--caligrafia-title);
+h2{ font-family: var(--caligrafia-title);
   font-size: var(--text-base);
   margin-bottom: 40px;
 }
