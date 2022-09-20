@@ -13,9 +13,6 @@ ul {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
 
 .bodyindex {
   display: grid;
@@ -35,116 +32,18 @@ h2 {
   margin-bottom: 40px;
 }
 
-.main {
-  grid-area: main;
-  padding: var(--padding);
-}
-
-.main__div {
-  background-image: url(https://esjur.com/wp-content/uploads/2018/09/esjur-fachada.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
-  width: auto;
-  margin-top: 30px;
-}
-
-.main__div-parrafo {
-  font-family: var(--caligrafia-parrafos);
-  font-size: var(--text-medium);
-  letter-spacing: 5px;
-  color: var(--crema);
-  word-spacing: 10px;
-}
-
 h1 {
   font-family: var(--caligrafia-title);
   font-size: var(--text-large);
   margin-top: 50px;
   margin-bottom: 40px;
 }
-.AreasDePractica {
-  grid-area: section;
-  padding-top: 60px;
-  border-top: var(--naranja);
-  font-size: var(--text-small);
-}
-
-.AreasDePractica__titulo {
-  margin-left: 45%;
-}
-.AreasDePractica__titulo-div {
-  padding: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  font-family: var(--caligrafia-title);
-}
-
 h3 {
   font-family: var(--caligrafia-title);
 }
 
-.AreasDePractica__titulo-divImg {
-  margin-bottom: 10px;
-}
 
-.AreasDePractica__link {
-  font-family: var(--caligrafia-parrafos);
-  color: var(--naranja);
-  padding: 55px;
-}
 
-.AreasDePractica__titulo-div2 img {
-  height: 100px;
-  width: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 1s;
-}
-
-.AreasDePractica__titulo-div2 img:hover {
-  height: 200px;
-  width: 200px;
-}
-
-.pie {
-  grid-area: pie;
-  padding-top: var(--padding);
-  padding: var(--padding2);
-  background-color: var(--grisclaro);
-}
-
-iframe {
-  width: 100%;
-}
-
-.footer {
-  background-color: var(--grisclaro);
-  height: 200px;
-  width: 100%;
-  margin-top: 200px;
-}
-.pie__iconosDeContacto {
-  padding: 70px;
-  display: flex;
-  justify-content: center;
-  gap: var(--spacing-large);
-}
-
-.iconoEmail:hover {
-  opacity: 50%;
-}
-.iconoWhatsApp:hover {
-  opacity: 50%;
-}
-.iconoInstagram:hover {
-  opacity: 50%;
-}
-.iconoFacebook:hover {
-  opacity: 50%;
-}
 
 /* EQUIPO */
 
