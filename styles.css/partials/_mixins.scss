@@ -1,0 +1,11 @@
+@mixin parrafo($size, $color) {
+  margin-top: 30px;
+  font-family: var(caligrafia-generica);
+  font-weight: 100px;
+  letter-spacing: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-size: $size;
+  color: $color;
+  text-align: justify;
+}

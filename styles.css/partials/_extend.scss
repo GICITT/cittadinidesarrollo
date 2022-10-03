@@ -1,0 +1,30 @@
+%imgGaleria {
+  width: 400px;
+  height: 450px;
+  &:hover {
+    opacity: 50%;
+    transition: 1s;
+    cursor: pointer;
+    border: solid rgba(14, 6, 63, 0.87) 5px;
+  }
+}
+
+%h1 {
+  font-family: map-get($caligrafia, caligrafia-title);
+  color: #374342;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+%h2 {
+  font-family: map-get($caligrafia, caligrafia-title);
+  color: rgb(17, 0, 255);
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+%h3 {
+  font-family: map-get($caligrafia, caligrafia-title);
+  color: rgb(255, 8, 0);
+  margin-bottom: 50px;
+}

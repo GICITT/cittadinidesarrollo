@@ -1,12 +1,12 @@
 .header {
-  grid-area: header;
-  background-color: #053849;
+  background-color: map-get($color, azul);
   padding: var(--padding);
-  height: 150px;
+  height: 170px;
+  margin-bottom: 100px;
+
   .header__logoEstudio {
     border-radius: 15px;
     width: 200px;
     height: auto;
-    border: black solid 1px;
   }
 }

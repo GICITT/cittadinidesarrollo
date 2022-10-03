@@ -1,10 +1,12 @@
-/*color*/
+body {
+  background-color: rgb(216, 220, 220);
+}
 
 $color: (
   blanco: #f0f6f6,
   crema: #f2f2f2,
   celeste: #93bbbf,
-  naranja: #c58309,
+  naranja: #f5a119,
   grisclaro: #899b9f,
   grismasclaro: #f2f2f2,
   grisoscuro: #374342,
@@ -13,14 +15,13 @@ $color: (
 );
 
 $padding: (
-  padding: 59px,
   padding: 60px,
 );
 
 $spacing: (
   large: 6rem,
   medium: 2.4rem,
-  smal: 2rem,
+  smal: 0.2rem,
 );
 
 $font-sized: (
@@ -28,4 +29,9 @@ $font-sized: (
   text-medium: 2.2em,
   text-base: 1.6em,
   text-small: 1.4em,
+);
+
+$caligrafia: (
+  caligrafia-generica: sans-serif,
+  caligrafia-titulos: "Cinzel",
 );

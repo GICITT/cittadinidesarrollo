@@ -1,0 +1,54 @@
+.contenedorFormulario {
+  .contenedorFormularioParrafo {
+    @include parrafo($size: 20px, $color: #0c0d0d);
+    margin-top: 300px;
+  }
+  .form {
+    margin-bottom: 20px;
+    width: 500px;
+    height: 550px;
+    background-color: rgba(246, 247, 250, 0.641);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+    div {
+      width: 90%;
+      label {
+        color: rgb(14, 12, 8);
+        font-family: map-get($caligrafia, caligrafia-generica);
+      }
+      input {
+        background: linear-gradient(rgb(203, 214, 228), rgb(216, 220, 220));
+        &:hover {
+          opacity: 50%;
+        }
+      }
+    }
+    div {
+      .label {
+        color: antiquewhite;
+        font-family: map-get($caligrafia, caligrafia-generica);
+      }
+      .inputAsunto {
+        background-color: rgb(197, 206, 216);
+        height: 140px;
+
+        &:hover {
+          opacity: 50%;
+        }
+      }
+    }
+    .aware {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .aware {
+        color: rgb(14, 12, 8);
+        letter-spacing: map-get($spacing, smal);
+      }
+    }
+  }
+}

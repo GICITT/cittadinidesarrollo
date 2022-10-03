@@ -1,8 +1,7 @@
 .main {
   padding: var(--padding);
   h1 {
-    font-family: var(--caligrafia-title);
-    margin-top: 20px;
+    @extend %h1;
   }
   .main__div {
     background-image: url(https://esjur.com/wp-content/uploads/2018/09/esjur-fachada.jpg);
@@ -10,11 +9,10 @@
     background-size: cover;
     height: 500px;
     width: auto;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    font-family: var(--caligrafia-parrafos);
     font-size: 30px;
-    letter-spacing: 5px;
-    color: whitesmoke;
+
+    .parrafo {
+      @include parrafo($size: 30px, $color: #f2f2f2);
+    }
   }
 }

@@ -1,0 +1,48 @@
+.contenedorGaleria {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  .row2 {
+    margin-top: 100px;
+
+    .col {
+      .imgJimmy {
+        @extend %imgGaleria;
+      }
+      .parrafoimgJimmy {
+        font-family: map-get($caligrafia, caligrafia-generica);
+        color: map-get($color, negro);
+        font-weight: bold;
+      }
+    }
+    .imgkim {
+      @extend %imgGaleria;
+    }
+    .parrafoImgKim {
+      font-family: map-get($caligrafia, caligrafia-generica);
+      color: map-get($color, negro);
+      font-weight: bold;
+    }
+  }
+  .row3 {
+    .col {
+      .imgDenny {
+        @extend %imgGaleria;
+      }
+      .parrafoImgDenny {
+        font-family: map-get($caligrafia, caligrafia-generica);
+        color: map-get($color, negro);
+        font-weight: bold;
+      }
+
+      .imgAlicia {
+        @extend %imgGaleria;
+      }
+      .parrafoImgAlicia {
+        font-family: map-get($caligrafia, caligrafia-generica);
+        color: map-get($color, negro);
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.colLaboral {
+  h1 {
+    @extend %h1;
+  }
+  p {
+    @include parrafo($size: 20px, $color: #0c0d0d);
+    text-align: justify;
+  }
+}
+
+.procedimientosLaborales {
+  margin-top: 90px;
+  h2 {
+    @extend %h2;
+  }
+  ul {
+    li {
+      @include parrafo($size: 15px, $color: #0c0d0d);
+    }
+  }
+}
