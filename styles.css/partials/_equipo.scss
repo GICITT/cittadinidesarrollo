@@ -13,12 +13,19 @@
       background-color: rgba(246, 247, 250, 0.226);
       height: 200px;
       width: 600px;
+      @media screen and (max-width: 412px) {
+        width: 370px;
+        margin-bottom: 100px;
+      }
     }
   }
   .col {
     .imgEquipo {
       height: 400px;
       width: 600px;
+      @media screen and (max-width: 412px) {
+        width: 350px;
+      }
     }
   }
 }

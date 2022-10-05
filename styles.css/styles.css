@@ -13,13 +13,13 @@ body {
   border: solid rgba(14, 6, 63, 0.87) 5px;
 }
 
-.colSucesiones h1, .colLaboral h1, .container .col h1, .main h1 {
+.container .row .colSucesiones h1, .container .colLaboral h1, .container .col h1, .container .row .col h1, .main h1 {
   color: #374342;
   margin-top: 20px;
   margin-bottom: 50px;
 }
 
-.documentacion h2, .procedimientosLaborales h2 {
+.container .documentacion h2, .container .procedimientosLaborales h2 {
   color: rgb(17, 0, 255);
   margin-top: 20px;
   margin-bottom: 50px;
@@ -44,7 +44,7 @@ body {
   background-image: url(https://esjur.com/wp-content/uploads/2018/09/esjur-fachada.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 650px;
   width: auto;
   font-size: 30px;
 }
@@ -58,6 +58,7 @@ body {
   font-size: 30px;
   color: #f2f2f2;
   text-align: justify;
+  background-color: rgba(246, 247, 250, 0.226);
 }
 
 div .parrafoAreasPractica {
@@ -70,6 +71,7 @@ div .parrafoAreasPractica {
   font-size: 20px;
   color: #f2f2f2;
   text-align: justify;
+  background-color: rgba(246, 247, 250, 0.226);
   font-weight: bold;
   margin-top: px;
 }
@@ -98,7 +100,26 @@ footer .mapaIframe {
   margin-top: 60px;
 }
 
-.contenedorFormulario .contenedorFormularioParrafo {
+@media screen and (max-width: 412px) {
+  .container .row .col {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 412px) {
+  .container .row .col .imagenHablemos {
+    width: 370px;
+  }
+}
+@media screen and (max-width: 412px) {
+  .container .contenedorFormulario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+.container .contenedorFormulario .contenedorFormularioParrafo {
   margin-top: 30px;
   font-family: var(caligrafia-generica);
   font-weight: 100px;
@@ -108,9 +129,16 @@ footer .mapaIframe {
   font-size: 20px;
   color: #0c0d0d;
   text-align: justify;
-  margin-top: 300px;
+  background-color: rgba(246, 247, 250, 0.226);
+  margin-top: 250px;
 }
-.contenedorFormulario .form {
+@media screen and (max-width: 412px) {
+  .container .contenedorFormulario .contenedorFormularioParrafo {
+    width: 370px;
+    margin-top: 100px;
+  }
+}
+.container .contenedorFormulario .form {
   margin-bottom: 20px;
   width: 500px;
   height: 550px;
@@ -121,36 +149,42 @@ footer .mapaIframe {
   margin-top: 20px;
   margin-left: 20px;
 }
-.contenedorFormulario .form div {
+@media screen and (max-width: 412px) {
+  .container .contenedorFormulario .form {
+    width: 350px;
+    margin-top: 100px;
+  }
+}
+.container .contenedorFormulario .form div {
   width: 90%;
 }
-.contenedorFormulario .form div label {
+.container .contenedorFormulario .form div label {
   color: rgb(14, 12, 8);
   font-family: sans-serif;
 }
-.contenedorFormulario .form div input {
+.container .contenedorFormulario .form div input {
   background: linear-gradient(rgb(203, 214, 228), rgb(216, 220, 220));
 }
-.contenedorFormulario .form div input:hover {
+.container .contenedorFormulario .form div input:hover {
   opacity: 50%;
 }
-.contenedorFormulario .form div .label {
+.container .contenedorFormulario .form div .label {
   color: antiquewhite;
   font-family: sans-serif;
 }
-.contenedorFormulario .form div .inputAsunto {
+.container .contenedorFormulario .form div .inputAsunto {
   background-color: rgb(197, 206, 216);
   height: 140px;
 }
-.contenedorFormulario .form div .inputAsunto:hover {
+.container .contenedorFormulario .form div .inputAsunto:hover {
   opacity: 50%;
 }
-.contenedorFormulario .form .aware {
+.container .contenedorFormulario .form .aware {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.contenedorFormulario .form .aware .aware {
+.container .contenedorFormulario .form .aware .aware {
   color: rgb(14, 12, 8);
   letter-spacing: 0.2rem;
 }
@@ -172,12 +206,24 @@ footer .mapaIframe {
   color: #0c0d0d;
   text-align: justify;
   background-color: rgba(246, 247, 250, 0.226);
+  background-color: rgba(246, 247, 250, 0.226);
   height: 200px;
   width: 600px;
+}
+@media screen and (max-width: 412px) {
+  .container .col .parrafoEquipo {
+    width: 370px;
+    margin-bottom: 100px;
+  }
 }
 .container .col .imgEquipo {
   height: 400px;
   width: 600px;
+}
+@media screen and (max-width: 412px) {
+  .container .col .imgEquipo {
+    width: 350px;
+  }
 }
 
 .contenedorGaleria {
@@ -188,20 +234,40 @@ footer .mapaIframe {
 .contenedorGaleria .row2 {
   margin-top: 100px;
 }
+@media screen and (max-width: 412px) {
+  .contenedorGaleria .row2 .col .imgJimmy {
+    width: 350px !important;
+  }
+}
 .contenedorGaleria .row2 .col .parrafoimgJimmy {
   font-family: sans-serif;
   color: #0c0d0d;
   font-weight: bold;
+}
+@media screen and (max-width: 412px) {
+  .contenedorGaleria .row2 .imgkim {
+    width: 350px !important;
+  }
 }
 .contenedorGaleria .row2 .parrafoImgKim {
   font-family: sans-serif;
   color: #0c0d0d;
   font-weight: bold;
 }
+@media screen and (max-width: 412px) {
+  .contenedorGaleria .row3 .col .imgDenny {
+    width: 350px !important;
+  }
+}
 .contenedorGaleria .row3 .col .parrafoImgDenny {
   font-family: sans-serif;
   color: #0c0d0d;
   font-weight: bold;
+}
+@media screen and (max-width: 412px) {
+  .contenedorGaleria .row3 .col .imgAlicia {
+    width: 350px !important;
+  }
 }
 .contenedorGaleria .row3 .col .parrafoImgAlicia {
   font-family: sans-serif;
@@ -209,7 +275,7 @@ footer .mapaIframe {
   font-weight: bold;
 }
 
-.colLaboral p {
+.container .colLaboral p {
   margin-top: 30px;
   font-family: var(caligrafia-generica);
   font-weight: 100px;
@@ -219,13 +285,21 @@ footer .mapaIframe {
   font-size: 20px;
   color: #0c0d0d;
   text-align: justify;
+  background-color: rgba(246, 247, 250, 0.226);
   text-align: justify;
 }
-
-.procedimientosLaborales {
+@media screen and (max-width: 412px) {
+  .container .col .imgDeLaboral {
+    width: 390px;
+    height: 300px;
+    margin-top: 90px;
+    margin-bottom: 10px;
+  }
+}
+.container .procedimientosLaborales {
   margin-top: 90px;
 }
-.procedimientosLaborales ul li {
+.container .procedimientosLaborales ul li {
   margin-top: 30px;
   font-family: var(caligrafia-generica);
   font-weight: 100px;
@@ -235,9 +309,15 @@ footer .mapaIframe {
   font-size: 15px;
   color: #0c0d0d;
   text-align: justify;
+  background-color: rgba(246, 247, 250, 0.226);
 }
 
-.colSucesiones p {
+@media screen and (max-width: 412px) {
+  .container .row .colSucesiones h1 {
+    width: 350px !important;
+  }
+}
+.container .row .colSucesiones p {
   margin-top: 30px;
   font-family: var(caligrafia-generica);
   font-weight: 100px;
@@ -247,15 +327,28 @@ footer .mapaIframe {
   font-size: 20px;
   color: #0c0d0d;
   text-align: justify;
+  background-color: rgba(246, 247, 250, 0.226);
   text-align: justify;
 }
-
-.documentacion {
+@media screen and (max-width: 412px) {
+  .container .row .colSucesiones p {
+    width: 350px !important;
+  }
+}
+@media screen and (max-width: 412px) {
+  .container .row .col .imagensSucesiones {
+    width: 350px;
+  }
+}
+.container .documentacion {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.documentacion .documentacionParrafo {
+.container .documentacion h2 {
+  margin-top: 80px;
+}
+.container .documentacion .documentacionParrafo {
   margin-top: 30px;
   font-family: var(caligrafia-generica);
   font-weight: 100px;
@@ -265,13 +358,15 @@ footer .mapaIframe {
   font-size: 20px;
   color: #0c0d0d;
   text-align: justify;
+  background-color: rgba(246, 247, 250, 0.226);
+  margin-bottom: 100px;
 }
-.documentacion ul {
+.container .documentacion ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.documentacion ul li {
+.container .documentacion ul li {
   font-family: sans-serif;
   font-size: large;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,30 +1,50 @@
-.colSucesiones {
-  h1 {
-    @extend %h1;
+.container {
+  .row {
+    .colSucesiones {
+      h1 {
+        @extend %h1;
+        @media screen and (max-width: 412px) {
+          width: 350px !important;
+        }
+      }
+      p {
+        @include parrafo($size: 20px, $color: #0c0d0d);
+        text-align: justify;
+        @media screen and (max-width: 412px) {
+          width: 350px !important;
+        }
+      }
+    }
+    .col {
+      .imagensSucesiones {
+        @media screen and (max-width: 412px) {
+          width: 350px;
+        }
+      }
+    }
   }
-  p {
-    @include parrafo($size: 20px, $color: #0c0d0d);
-    text-align: justify;
-  }
-}
 
-.documentacion {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  h2 {
-    @extend %h2;
-  }
-  .documentacionParrafo {
-    @include parrafo($size: 20px, $color: #0c0d0d);
-  }
-  ul {
+  .documentacion {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    li {
-      font-family: map-get($caligrafia, caligrafia-generica);
-      font-size: large;
+    h2 {
+      @extend %h2;
+      margin-top: 80px;
+    }
+    .documentacionParrafo {
+      @include parrafo($size: 20px, $color: #0c0d0d);
+      margin-bottom: 100px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      li {
+        font-family: map-get($caligrafia, caligrafia-generica);
+        font-size: large;
+      }
     }
   }
 }

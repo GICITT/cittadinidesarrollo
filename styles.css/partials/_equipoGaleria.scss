@@ -8,6 +8,9 @@
     .col {
       .imgJimmy {
         @extend %imgGaleria;
+        @media screen and (max-width: 412px) {
+          width: 350px !important;
+        }
       }
       .parrafoimgJimmy {
         font-family: map-get($caligrafia, caligrafia-generica);
@@ -17,6 +20,9 @@
     }
     .imgkim {
       @extend %imgGaleria;
+      @media screen and (max-width: 412px) {
+        width: 350px !important;
+      }
     }
     .parrafoImgKim {
       font-family: map-get($caligrafia, caligrafia-generica);
@@ -28,6 +34,9 @@
     .col {
       .imgDenny {
         @extend %imgGaleria;
+        @media screen and (max-width: 412px) {
+          width: 350px !important;
+        }
       }
       .parrafoImgDenny {
         font-family: map-get($caligrafia, caligrafia-generica);
@@ -37,6 +46,9 @@
 
       .imgAlicia {
         @extend %imgGaleria;
+        @media screen and (max-width: 412px) {
+          width: 350px !important;
+        }
       }
       .parrafoImgAlicia {
         font-family: map-get($caligrafia, caligrafia-generica);

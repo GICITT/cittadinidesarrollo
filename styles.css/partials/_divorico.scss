@@ -1,0 +1,20 @@
+.contenedorDivorcio {
+  .rowDivorcio {
+    .colDivorcio {
+      @media screen and (max-width: 412px) {
+        display: flex;
+        flex-direction: column;
+        flex-direction: center;
+      }
+      .tituloDiv {
+        @extend h1;
+        border: solid black;
+      }
+      .imgDivorcio {
+        width: 350px !important;
+        margin-top: 200px !important;
+        margin-bottom: 100px;
+      }
+    }
+  }
+}

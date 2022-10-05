@@ -1,21 +1,34 @@
-.colLaboral {
-  h1 {
-    @extend %h1;
+.container {
+  .colLaboral {
+    h1 {
+      @extend %h1;
+    }
+    p {
+      @include parrafo($size: 20px, $color: #0c0d0d);
+      text-align: justify;
+    }
   }
-  p {
-    @include parrafo($size: 20px, $color: #0c0d0d);
-    text-align: justify;
-  }
-}
 
-.procedimientosLaborales {
-  margin-top: 90px;
-  h2 {
-    @extend %h2;
+  .col {
+    .imgDeLaboral {
+      @media screen and (max-width: 412px) {
+        width: 390px;
+        height: 300px;
+        margin-top: 90px;
+        margin-bottom: 10px;
+      }
+    }
   }
-  ul {
-    li {
-      @include parrafo($size: 15px, $color: #0c0d0d);
+
+  .procedimientosLaborales {
+    margin-top: 90px;
+    h2 {
+      @extend %h2;
+    }
+    ul {
+      li {
+        @include parrafo($size: 15px, $color: #0c0d0d);
+      }
     }
   }
 }
