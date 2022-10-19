@@ -2,24 +2,24 @@ body {
   background-color: rgb(216, 220, 220);
 }
 
-.contenedorGaleria .row3 .col .imgAlicia, .contenedorGaleria .row3 .col .imgDenny, .contenedorGaleria .row2 .imgkim, .contenedorGaleria .row2 .col .imgJimmy {
-  width: 400px;
-  height: 450px;
+main .contenedorGaleria .row2 .col .imgAlicia, main .contenedorGaleria .row2 .col .imgDenny, main .contenedorGaleria .row2 .imgkim, main .contenedorGaleria .row2 .col .imgJimmy {
+  width: 300px;
+  height: 400px;
 }
-.contenedorGaleria .row3 .col .imgAlicia:hover, .contenedorGaleria .row3 .col .imgDenny:hover, .contenedorGaleria .row2 .imgkim:hover, .contenedorGaleria .row2 .col .imgJimmy:hover {
+main .contenedorGaleria .row2 .col .imgAlicia:hover, main .contenedorGaleria .row2 .col .imgDenny:hover, main .contenedorGaleria .row2 .imgkim:hover, main .contenedorGaleria .row2 .col .imgJimmy:hover {
   opacity: 50%;
   transition: 1s;
   cursor: pointer;
   border: solid rgba(14, 6, 63, 0.87) 5px;
 }
 
-.container .row .colSucesiones h1, .container .colLaboral h1, .container .col h1, .container .row .col h1, .main h1 {
+.contenedorDivorcio .rowDivorcio .colDivorcio h1, .container .row .colSucesiones h1, .container .colLaboral h1, main .container row .col h1, .container .row .col h1, .main h1 {
   color: #374342;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
-.container .documentacion h2, .container .procedimientosLaborales h2 {
+.contenedorDivorcio .colUnilateral h2, .contenedorDivorcio .rowDivorcioVariantes .colComunAcuerdo h2, .container .documentacion h2, .container .procedimientosLaborales h2 {
   color: rgb(17, 0, 255);
   margin-top: 20px;
   margin-bottom: 50px;
@@ -47,24 +47,42 @@ body {
   height: 650px;
   width: auto;
   font-size: 30px;
+  display: flex;
+  align-items: center;
 }
 .main .main__div .parrafo {
   margin-top: 30px;
   font-family: var(caligrafia-generica);
-  font-weight: 100px;
+  font-weight: bold;
   letter-spacing: 5px;
   margin-left: 5px;
   margin-top: 5px;
-  font-size: 30px;
+  font-size: 35px;
   color: #f2f2f2;
   text-align: justify;
   background-color: rgba(246, 247, 250, 0.226);
+  margin-right: 70px;
+  margin-left: 70px;
+  height: 200px;
+  width: 200;
+  text-align: justify;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
+div .imgAreas {
+  width: 300px;
+  height: 350px;
+  margin-top: 50px;
+}
+div .imgAreas:hover {
+  opacity: 60%;
+}
 div .parrafoAreasPractica {
   margin-top: 30px;
   font-family: var(caligrafia-generica);
-  font-weight: 100px;
+  font-weight: bold;
   letter-spacing: 5px;
   margin-left: 5px;
   margin-top: 5px;
@@ -72,15 +90,9 @@ div .parrafoAreasPractica {
   color: #f2f2f2;
   text-align: justify;
   background-color: rgba(246, 247, 250, 0.226);
-  font-weight: bold;
-  margin-top: px;
-}
-div .imgAreas {
-  width: 350px;
-  height: 400px;
-}
-div .imgAreas:hover {
-  opacity: 60%;
+  height: 150px;
+  display: flex;
+  align-items: baseline;
 }
 
 footer .contactenos {
@@ -98,6 +110,10 @@ footer .mapaIframe {
   height: 500px;
   margin-bottom: 60px;
   margin-top: 60px;
+}
+footer .contenedorIconos a svg {
+  width: 60px;
+  height: 60px;
 }
 
 @media screen and (max-width: 412px) {
@@ -122,7 +138,7 @@ footer .mapaIframe {
 .container .contenedorFormulario .contenedorFormularioParrafo {
   margin-top: 30px;
   font-family: var(caligrafia-generica);
-  font-weight: 100px;
+  font-weight: bold;
   letter-spacing: 5px;
   margin-left: 5px;
   margin-top: 5px;
@@ -130,7 +146,7 @@ footer .mapaIframe {
   color: #0c0d0d;
   text-align: justify;
   background-color: rgba(246, 247, 250, 0.226);
-  margin-top: 250px;
+  margin-top: 100px;
 }
 @media screen and (max-width: 412px) {
   .container .contenedorFormulario .contenedorFormularioParrafo {
@@ -189,16 +205,16 @@ footer .mapaIframe {
   letter-spacing: 0.2rem;
 }
 
-.container {
+main .container {
   display: flex;
   align-items: center;
   margin-top: 50px;
   flex-wrap: wrap;
 }
-.container .col .parrafoEquipo {
+main .container row .col .parrafoEquipo {
   margin-top: 30px;
   font-family: var(caligrafia-generica);
-  font-weight: 100px;
+  font-weight: bold;
   letter-spacing: 5px;
   margin-left: 5px;
   margin-top: 5px;
@@ -209,67 +225,67 @@ footer .mapaIframe {
   background-color: rgba(246, 247, 250, 0.226);
   height: 200px;
   width: 600px;
+  text-align: justify;
 }
-@media screen and (max-width: 412px) {
-  .container .col .parrafoEquipo {
+@media screen and (max-width: 312px) {
+  main .container row .col .parrafoEquipo {
     width: 370px;
-    margin-bottom: 100px;
+    height: 100px;
   }
 }
-.container .col .imgEquipo {
+main .container .col .imgEquipo {
   height: 400px;
   width: 600px;
 }
-@media screen and (max-width: 412px) {
-  .container .col .imgEquipo {
+@media screen and (max-width: 375px) {
+  main .container .col .imgEquipo {
     width: 350px;
   }
 }
-
-.contenedorGaleria {
+main .contenedorGaleria {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
-.contenedorGaleria .row2 {
+main .contenedorGaleria .row2 {
   margin-top: 100px;
 }
-@media screen and (max-width: 412px) {
-  .contenedorGaleria .row2 .col .imgJimmy {
+@media screen and (max-width: 312px) {
+  main .contenedorGaleria .row2 .col .imgJimmy {
     width: 350px !important;
   }
 }
-.contenedorGaleria .row2 .col .parrafoimgJimmy {
+main .contenedorGaleria .row2 .col .parrafoimgJimmy {
   font-family: sans-serif;
   color: #0c0d0d;
   font-weight: bold;
 }
-@media screen and (max-width: 412px) {
-  .contenedorGaleria .row2 .imgkim {
+@media screen and (max-width: 312px) {
+  main .contenedorGaleria .row2 .imgkim {
     width: 350px !important;
   }
 }
-.contenedorGaleria .row2 .parrafoImgKim {
+main .contenedorGaleria .row2 .parrafoImgKim {
   font-family: sans-serif;
   color: #0c0d0d;
   font-weight: bold;
 }
-@media screen and (max-width: 412px) {
-  .contenedorGaleria .row3 .col .imgDenny {
+@media screen and (max-width: 312px) {
+  main .contenedorGaleria .row2 .col .imgDenny {
     width: 350px !important;
   }
 }
-.contenedorGaleria .row3 .col .parrafoImgDenny {
+main .contenedorGaleria .row2 .col .parrafoImgDenny {
   font-family: sans-serif;
   color: #0c0d0d;
   font-weight: bold;
 }
-@media screen and (max-width: 412px) {
-  .contenedorGaleria .row3 .col .imgAlicia {
+@media screen and (max-width: 312px) {
+  main .contenedorGaleria .row2 .col .imgAlicia {
     width: 350px !important;
   }
 }
-.contenedorGaleria .row3 .col .parrafoImgAlicia {
+main .contenedorGaleria .row2 .col .parrafoImgAlicia {
   font-family: sans-serif;
   color: #0c0d0d;
   font-weight: bold;
@@ -278,7 +294,7 @@ footer .mapaIframe {
 .container .colLaboral p {
   margin-top: 30px;
   font-family: var(caligrafia-generica);
-  font-weight: 100px;
+  font-weight: bold;
   letter-spacing: 5px;
   margin-left: 5px;
   margin-top: 5px;
@@ -302,12 +318,12 @@ footer .mapaIframe {
 .container .procedimientosLaborales ul li {
   margin-top: 30px;
   font-family: var(caligrafia-generica);
-  font-weight: 100px;
+  font-weight: bold;
   letter-spacing: 5px;
   margin-left: 5px;
   margin-top: 5px;
-  font-size: 15px;
-  color: #0c0d0d;
+  font-size: 17px;
+  color: #f47a16;
   text-align: justify;
   background-color: rgba(246, 247, 250, 0.226);
 }
@@ -320,7 +336,7 @@ footer .mapaIframe {
 .container .row .colSucesiones p {
   margin-top: 30px;
   font-family: var(caligrafia-generica);
-  font-weight: 100px;
+  font-weight: bold;
   letter-spacing: 5px;
   margin-left: 5px;
   margin-top: 5px;
@@ -351,7 +367,7 @@ footer .mapaIframe {
 .container .documentacion .documentacionParrafo {
   margin-top: 30px;
   font-family: var(caligrafia-generica);
-  font-weight: 100px;
+  font-weight: bold;
   letter-spacing: 5px;
   margin-left: 5px;
   margin-top: 5px;
@@ -369,4 +385,67 @@ footer .mapaIframe {
 .container .documentacion ul li {
   font-family: sans-serif;
   font-size: large;
+}
+
+.contenedorDivorcio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 312px) {
+  .contenedorDivorcio .rowDivorcio .colDivorcio {
+    display: flex;
+    flex-direction: column;
+    flex-direction: center;
+  }
+}
+.contenedorDivorcio .rowDivorcio .colDivorcio .imgDivorcio {
+  width: 500px;
+  height: 400px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 20px solid black;
+}
+@media screen and (max-width: 312px) {
+  .contenedorDivorcio .rowDivorcio .colDivorcio .imgDivorcio {
+    width: 300px;
+    height: 300px;
+  }
+}
+.contenedorDivorcio .rowDivorcioVariantes .colComunAcuerdo .parrafoComunAcuerdo {
+  margin-top: 30px;
+  font-family: var(caligrafia-generica);
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-size: 20px;
+  color: #0c0d0d;
+  text-align: justify;
+  background-color: rgba(246, 247, 250, 0.226);
+}
+.contenedorDivorcio .colUnilateral .parrafoUnilateral {
+  margin-top: 30px;
+  font-family: var(caligrafia-generica);
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-size: 20px;
+  color: #0c0d0d;
+  text-align: justify;
+  background-color: rgba(246, 247, 250, 0.226);
+  margin-bottom: 30px;
+}
+.contenedorDivorcio .row .col ul li {
+  margin-top: 30px;
+  font-family: var(caligrafia-generica);
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-size: 17px;
+  color: #f47a16;
+  text-align: justify;
+  background-color: rgba(246, 247, 250, 0.226);
 }/*# sourceMappingURL=styles.css.map */

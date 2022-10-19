@@ -10,9 +10,19 @@
     height: 650px;
     width: auto;
     font-size: 30px;
+    display: flex;
+    align-items: center;
 
     .parrafo {
-      @include parrafo($size: 30px, $color: #f2f2f2);
+      @include parrafo($size: 35px, $color: #f2f2f2);
+      margin-right: 70px;
+      margin-left: 70px;
+      height: 200px;
+      width: 200;
+      text-align: justify;
+      padding-top: 30px;
+      padding-left: 30px;
+      padding-right: 30px;
     }
   }
 }
