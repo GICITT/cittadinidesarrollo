@@ -18,7 +18,7 @@
 
 %h2 {
   font-family: map-get($caligrafia, caligrafia-title);
-  color: rgb(17, 0, 255);
+  color: #0c627e;
   margin-top: 20px;
   margin-bottom: 50px;
 }
@@ -26,5 +26,5 @@
 %h3 {
   font-family: map-get($caligrafia, caligrafia-title);
   color: rgb(255, 8, 0);
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }

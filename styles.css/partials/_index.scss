@@ -1,0 +1,80 @@
+.main {
+  padding: var(--padding);
+  h1 {
+    @extend %h1;
+    margin-left: 5px;
+  }
+  .main__div {
+    background-image: url(https://esjur.com/wp-content/uploads/2018/09/esjur-fachada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    width: auto;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 412px) {
+      width: 320px;
+      height: 700px;
+      margin-top: 90px;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .parrafo {
+      @include parrafo($size: 35px, $color: #f2f2f2);
+      margin-right: 70px;
+      margin-left: 70px;
+      height: 200px;
+      @media screen and (max-width: 412px) {
+        @include parrafo($size: 22px, $color: #f2f2f2);
+        width: 320px;
+        height: 500px;
+        margin-top: 5px;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+
+      text-align: justify;
+      padding-top: 30px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  div {
+    .imgAreas {
+      width: 300px;
+      height: 350px;
+      margin-top: 50px;
+      &:hover {
+        opacity: 60%;
+      }
+    }
+    .parrafoAreasPractica {
+      @include parrafo($size: 20px, $color: #f2f2f2);
+      height: 150px;
+      display: flex;
+      align-items: baseline;
+    }
+  }
+  div {
+    .imgAreas {
+      width: 300px;
+      height: 350px;
+      margin-top: 50px;
+      &:hover {
+        opacity: 60%;
+      }
+    }
+    .parrafoAreasPractica {
+      @include parrafo($size: 20px, $color: #f2f2f2);
+      height: 150px;
+      display: flex;
+      align-items: baseline;
+    }
+  }
+}

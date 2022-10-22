@@ -4,14 +4,14 @@ main {
     align-items: center;
     margin-top: 50px;
     flex-wrap: wrap;
-    row {
+    .row {
       .col {
         h1 {
           @extend %h1;
         }
         .parrafoEquipo {
           @include parrafo($size: 20px, $color: #0c0d0d);
-          background-color: rgba(246, 247, 250, 0.226);
+
           height: 200px;
           width: 600px;
           text-align: justify;
@@ -26,8 +26,13 @@ main {
       .imgEquipo {
         height: 400px;
         width: 600px;
-        @media screen and (max-width: 375px) {
-          width: 350px;
+        @media screen and (max-width: 412px) {
+          width: 300px;
+          height: 350px;
+          margin-top: 90px;
+          margin-left: 10%;
+          margin-right: 10%;
+          margin-bottom: 10px;
         }
       }
     }
