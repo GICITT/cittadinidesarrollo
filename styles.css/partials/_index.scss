@@ -24,7 +24,6 @@
       align-items: center;
       flex-direction: column;
     }
-
     .parrafo {
       @include parrafo($size: 35px, $color: #f2f2f2);
       margin-right: 70px;
@@ -33,7 +32,7 @@
       @media screen and (max-width: 412px) {
         @include parrafo($size: 22px, $color: #f2f2f2);
         width: 320px;
-        height: 500px;
+        height: 600px;
         margin-top: 5px;
         margin-left: 10%;
         margin-right: 10%;
