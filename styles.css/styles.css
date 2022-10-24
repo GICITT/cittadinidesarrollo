@@ -207,7 +207,12 @@ footer .contenedorIconos a svg {
     flex-direction: column;
   }
 }
-.container .contenedorFormulario .contenedorFormularioParrafo {
+@media screen and (max-width: 450px) and (max-width: 450px) {
+  .container .contenedorFormulario {
+    margin-right: 500px;
+  }
+}
+.container .contenedorFormulario p {
   margin-top: 30px;
   font-family: var(caligrafia-generica);
   font-weight: bold;
@@ -222,7 +227,7 @@ footer .contenedorIconos a svg {
   padding: 10px;
 }
 @media screen and (max-width: 450px) {
-  .container .contenedorFormulario .contenedorFormularioParrafo {
+  .container .contenedorFormulario p {
     width: 100%;
     margin-top: 100px;
   }
@@ -240,9 +245,8 @@ footer .contenedorIconos a svg {
 }
 @media screen and (max-width: 450px) {
   .container .contenedorFormulario .form {
-    width: 400px;
+    width: 380px;
     margin-top: 100px;
-    margin-right: 10px;
   }
 }
 .container .contenedorFormulario .form div {
@@ -251,6 +255,7 @@ footer .contenedorIconos a svg {
 .container .contenedorFormulario .form div label {
   color: rgb(14, 12, 8);
   font-family: sans-serif;
+  font-size: 20px;
 }
 .container .contenedorFormulario .form div input {
   background: linear-gradient(rgb(203, 214, 228), rgb(216, 220, 220));
