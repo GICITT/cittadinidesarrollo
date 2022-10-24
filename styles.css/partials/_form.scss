@@ -10,6 +10,7 @@
         @extend %h1;
       }
       .imagenHablemos {
+        border-radius: 1%;
         @media screen and (max-width: 450px) {
           width: 370px;
         }

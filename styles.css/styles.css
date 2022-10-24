@@ -2,11 +2,11 @@ body {
   background-color: rgb(216, 220, 220);
 }
 
-main .contenedorGaleria .row2 .col .imgAlicia, main .contenedorGaleria .row2 .col .imgDenny, main .contenedorGaleria .row2 .imgkim, main .contenedorGaleria .row2 .col .imgJimmy {
+main .contenedorGaleria .row2 .col .imgAlicia, main .contenedorGaleria .row2 .col .imgDenny, main .contenedorGaleria .row2 .col .imgkim, main .contenedorGaleria .row2 .col .imgJimmy {
   width: 300px;
   height: 400px;
 }
-main .contenedorGaleria .row2 .col .imgAlicia:hover, main .contenedorGaleria .row2 .col .imgDenny:hover, main .contenedorGaleria .row2 .imgkim:hover, main .contenedorGaleria .row2 .col .imgJimmy:hover {
+main .contenedorGaleria .row2 .col .imgAlicia:hover, main .contenedorGaleria .row2 .col .imgDenny:hover, main .contenedorGaleria .row2 .col .imgkim:hover, main .contenedorGaleria .row2 .col .imgJimmy:hover {
   opacity: 50%;
   transition: 1s;
   cursor: pointer;
@@ -23,6 +23,13 @@ main .contenedorGaleria .row2 .col .imgAlicia:hover, main .contenedorGaleria .ro
   color: #0c627e;
   margin-top: 20px;
   margin-bottom: 50px;
+}
+
+footer .contactenos h3 {
+  color: #f5a119;
+  margin-bottom: 60px;
+  font-size: 35px;
+  letter-spacing: 2px;
 }
 
 .header {
@@ -134,9 +141,9 @@ footer .contactenos {
   align-items: center;
 }
 footer .contactenos h3 {
-  margin-left: 5px;
-  margin-top: 100px;
-  color: #f5a119;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 footer .mapaIframe {
   width: 100%;
@@ -155,6 +162,9 @@ footer .contenedorIconos a svg {
     flex-wrap: wrap;
     flex-direction: column;
   }
+}
+.container .row .col .imagenHablemos {
+  border-radius: 1%;
 }
 @media screen and (max-width: 450px) {
   .container .row .col .imagenHablemos {
@@ -260,7 +270,7 @@ main .container .row .col .parrafoEquipo {
   width: 600px;
   text-align: justify;
 }
-@media screen and (max-width: 312px) {
+@media screen and (max-width: 450px) {
   main .container .row .col .parrafoEquipo {
     width: 370px;
     height: 100px;
@@ -270,13 +280,12 @@ main .container .col .imgEquipo {
   height: 400px;
   width: 600px;
 }
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 450px) {
   main .container .col .imgEquipo {
-    width: 300px;
+    width: 320px;
     height: 350px;
-    margin-top: 90px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: 200px;
+    margin-left: 20px;
     margin-bottom: 10px;
   }
 }
@@ -288,9 +297,17 @@ main .contenedorGaleria {
 main .contenedorGaleria .row2 {
   margin-top: 100px;
 }
-@media screen and (max-width: 312px) {
+@media screen and (max-width: 450px) {
+  main .contenedorGaleria .row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 450px) {
   main .contenedorGaleria .row2 .col .imgJimmy {
-    width: 350px !important;
+    width: 350px;
+    margin-left: 20px;
   }
 }
 main .contenedorGaleria .row2 .col .parrafoimgJimmy {
@@ -298,19 +315,21 @@ main .contenedorGaleria .row2 .col .parrafoimgJimmy {
   color: #0c0d0d;
   font-weight: bold;
 }
-@media screen and (max-width: 312px) {
-  main .contenedorGaleria .row2 .imgkim {
-    width: 350px !important;
+@media screen and (max-width: 450px) {
+  main .contenedorGaleria .row2 .col .imgkim {
+    width: 350px;
+    margin-left: 20px;
   }
 }
-main .contenedorGaleria .row2 .parrafoImgKim {
+main .contenedorGaleria .row2 .col .parrafoImgKim {
   font-family: sans-serif;
   color: #0c0d0d;
   font-weight: bold;
 }
-@media screen and (max-width: 312px) {
+@media screen and (max-width: 450px) {
   main .contenedorGaleria .row2 .col .imgDenny {
-    width: 350px !important;
+    width: 350px;
+    margin-left: 20px;
   }
 }
 main .contenedorGaleria .row2 .col .parrafoImgDenny {
@@ -318,9 +337,10 @@ main .contenedorGaleria .row2 .col .parrafoImgDenny {
   color: #0c0d0d;
   font-weight: bold;
 }
-@media screen and (max-width: 312px) {
+@media screen and (max-width: 450px) {
   main .contenedorGaleria .row2 .col .imgAlicia {
-    width: 350px !important;
+    width: 350px;
+    margin-left: 20px;
   }
 }
 main .contenedorGaleria .row2 .col .parrafoImgAlicia {
@@ -329,6 +349,17 @@ main .contenedorGaleria .row2 .col .parrafoImgAlicia {
   font-weight: bold;
 }
 
+.container .row .colLaboral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 450px) {
+  .container .row .colLaboral h1 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
 .container .row .colLaboral p {
   margin-top: 30px;
   font-family: var(caligrafia-generica);
@@ -340,8 +371,8 @@ main .contenedorGaleria .row2 .col .parrafoImgAlicia {
   color: #0c0d0d;
   text-align: justify;
   background-color: rgba(246, 247, 250, 0.226);
-  margin-right: 5%;
-  margin-left: 200px;
+  margin-bottom: 100px;
+  margin-right: 0px;
 }
 @media screen and (max-width: 450px) {
   .container .row .colLaboral p {
@@ -377,8 +408,8 @@ main .contenedorGaleria .row2 .col .parrafoImgAlicia {
   letter-spacing: 5px;
   margin-left: 5px;
   margin-top: 5px;
-  font-size: 17px;
-  color: #0c0482;
+  font-size: 20px;
+  color: #1e19a3;
   text-align: justify;
   background-color: rgba(246, 247, 250, 0.226);
 }
@@ -389,6 +420,11 @@ main .contenedorGaleria .row2 .col .parrafoImgAlicia {
   }
 }
 
+.container .row .colSucesiones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media screen and (max-width: 450px) {
   .container .row .colSucesiones h1 {
     margin-left: 10%;
@@ -445,8 +481,8 @@ main .contenedorGaleria .row2 .col .parrafoImgAlicia {
   letter-spacing: 5px;
   margin-left: 5px;
   margin-top: 5px;
-  font-size: 17px;
-  color: #291ec6;
+  font-size: 20px;
+  color: #1e19a3;
   text-align: justify;
   background-color: rgba(246, 247, 250, 0.226);
 }
@@ -464,7 +500,8 @@ main .contenedorGaleria .row2 .col .parrafoImgAlicia {
   }
 }
 .contenedorDivorcio .rowDivorcio .colDivorcio h1 {
-  margin-left: 100px;
+  margin-left: 130px;
+  margin-bottom: 10px;
 }
 .contenedorDivorcio .rowDivorcio .colDivorcio .imgDivorcio {
   width: 600px;
@@ -529,8 +566,8 @@ main .contenedorGaleria .row2 .col .parrafoImgAlicia {
   letter-spacing: 5px;
   margin-left: 5px;
   margin-top: 5px;
-  font-size: 17px;
-  color: #0c0482;
+  font-size: 20px;
+  color: #1e19a3;
   text-align: justify;
   background-color: rgba(246, 247, 250, 0.226);
 }/*# sourceMappingURL=styles.css.map */

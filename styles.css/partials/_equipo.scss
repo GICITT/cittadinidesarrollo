@@ -11,11 +11,10 @@ main {
         }
         .parrafoEquipo {
           @include parrafo($size: 20px, $color: #0c0d0d);
-
           height: 200px;
           width: 600px;
           text-align: justify;
-          @media screen and (max-width: 312px) {
+          @media screen and (max-width: 450px) {
             width: 370px;
             height: 100px;
           }
@@ -26,12 +25,11 @@ main {
       .imgEquipo {
         height: 400px;
         width: 600px;
-        @media screen and (max-width: 412px) {
-          width: 300px;
+        @media screen and (max-width: 450px) {
+          width: 320px;
           height: 350px;
-          margin-top: 90px;
-          margin-left: 10%;
-          margin-right: 10%;
+          margin-top: 200px;
+          margin-left: 20px;
           margin-bottom: 10px;
         }
       }
@@ -44,12 +42,17 @@ main {
 
     .row2 {
       margin-top: 100px;
-
+      @media screen and (max-width: 450px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
       .col {
         .imgJimmy {
           @extend %imgGaleria;
-          @media screen and (max-width: 312px) {
-            width: 350px !important;
+          @media screen and (max-width: 450px) {
+            width: 350px;
+            margin-left: 20px;
           }
         }
         .parrafoimgJimmy {
@@ -58,22 +61,26 @@ main {
           font-weight: bold;
         }
       }
-      .imgkim {
-        @extend %imgGaleria;
-        @media screen and (max-width: 312px) {
-          width: 350px !important;
+      .col {
+        .imgkim {
+          @extend %imgGaleria;
+          @media screen and (max-width: 450px) {
+            width: 350px;
+            margin-left: 20px;
+          }
         }
-      }
-      .parrafoImgKim {
-        font-family: map-get($caligrafia, caligrafia-generica);
-        color: map-get($color, negro);
-        font-weight: bold;
+        .parrafoImgKim {
+          font-family: map-get($caligrafia, caligrafia-generica);
+          color: map-get($color, negro);
+          font-weight: bold;
+        }
       }
       .col {
         .imgDenny {
           @extend %imgGaleria;
-          @media screen and (max-width: 312px) {
-            width: 350px !important;
+          @media screen and (max-width: 450px) {
+            width: 350px;
+            margin-left: 20px;
           }
         }
         .parrafoImgDenny {
@@ -81,11 +88,11 @@ main {
           color: map-get($color, negro);
           font-weight: bold;
         }
-
         .imgAlicia {
           @extend %imgGaleria;
-          @media screen and (max-width: 312px) {
-            width: 350px !important;
+          @media screen and (max-width: 450px) {
+            width: 350px;
+            margin-left: 20px;
           }
         }
         .parrafoImgAlicia {
