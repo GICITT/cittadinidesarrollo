@@ -15,6 +15,7 @@
         height: 600px;
         @media screen and (max-width: 450px) {
           width: 370px;
+          height: 500px;
         }
       }
     }
@@ -70,7 +71,6 @@
         .inputAsunto {
           background-color: rgb(197, 206, 216);
           height: 140px;
-
           &:hover {
             opacity: 50%;
           }
@@ -80,7 +80,6 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-
         .aware {
           color: rgb(14, 12, 8);
           letter-spacing: map-get($spacing, smal);

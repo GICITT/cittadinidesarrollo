@@ -190,6 +190,7 @@ footer .contenedorIconos a svg {
 @media screen and (max-width: 450px) {
   .container .row .col .imagenHablemos {
     width: 370px;
+    height: 500px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -296,7 +297,7 @@ main .container .row .col .parrafoEquipo {
 @media screen and (max-width: 450px) {
   main .container .row .col .parrafoEquipo {
     width: 370px;
-    height: 100px;
+    height: 300px;
   }
 }
 main .container .col .imgEquipo {
@@ -607,4 +608,9 @@ main .contenedorGaleria .row2 .col .parrafoImgAlicia {
 }
 .footer .linkContacto:hover {
   color: black;
+}
+@media screen and (max-width: 450px) {
+  .footer .linkContacto {
+    font-size: 25px;
+  }
 }/*# sourceMappingURL=styles.css.map */
