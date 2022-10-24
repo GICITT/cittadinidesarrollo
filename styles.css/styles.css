@@ -156,12 +156,12 @@ footer .contenedorIconos a svg {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 450px) {
   .container .row .col .imagenHablemos {
     width: 370px;
   }
 }
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 450px) {
   .container .contenedorFormulario {
     display: flex;
     flex-wrap: wrap;
@@ -181,9 +181,9 @@ footer .contenedorIconos a svg {
   background-color: rgba(246, 247, 250, 0.226);
   margin-top: 100px;
 }
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 450px) {
   .container .contenedorFormulario .contenedorFormularioParrafo {
-    width: 370px;
+    width: 100%;
     margin-top: 100px;
   }
 }
@@ -198,10 +198,11 @@ footer .contenedorIconos a svg {
   margin-top: 20px;
   margin-left: 20px;
 }
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 450px) {
   .container .contenedorFormulario .form {
-    width: 350px;
+    width: 400px;
     margin-top: 100px;
+    margin-right: 10px;
   }
 }
 .container .contenedorFormulario .form div {
