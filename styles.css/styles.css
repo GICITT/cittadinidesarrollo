@@ -13,13 +13,13 @@ main .contenedorGaleria .row2 .col .imgAlicia:hover, main .contenedorGaleria .ro
   border: solid rgba(14, 6, 63, 0.87) 5px;
 }
 
-.contenedorDivorcio .rowDivorcio .colDivorcio h1, .container .row .colSucesiones h1, .colLaboral h1, main .container .row .col h1, .container .row .col h1, .main h1 {
+.contenedorDivorcio .rowDivorcio .colDivorcio h1, .container .row .colSucesiones h1, .container .row .colLaboral h1, main .container .row .col h1, .container .row .col h1, .main h1 {
   color: #374342;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
-.contenedorDivorcio .row .col h2, .contenedorDivorcio .colUnilateral h2, .contenedorDivorcio .rowDivorcioVariantes .colComunAcuerdo h2, .container .row .documentacion h2, .procedimientosLaborales h2 {
+.contenedorDivorcio .row .col h2, .contenedorDivorcio .colUnilateral h2, .contenedorDivorcio .rowDivorcioVariantes .colComunAcuerdo h2, .container .row .documentacion h2, .container .row .procedimientosLaborales h2 {
   color: #0c627e;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -53,9 +53,9 @@ main .contenedorGaleria .row2 .col .imgAlicia:hover, main .contenedorGaleria .ro
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 450px) {
   .main .main__div {
-    width: 320px;
+    width: 340px;
     height: 700px;
     margin-top: 90px;
     margin-left: 5%;
@@ -85,7 +85,7 @@ main .contenedorGaleria .row2 .col .imgAlicia:hover, main .contenedorGaleria .ro
   padding-left: 30px;
   padding-right: 30px;
 }
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 450px) {
   .main .main__div .parrafo {
     margin-top: 30px;
     font-family: var(caligrafia-generica);
@@ -104,38 +104,15 @@ main .contenedorGaleria .row2 .col .imgAlicia:hover, main .contenedorGaleria .ro
     margin-right: 10%;
   }
 }
-.main div .imgAreas {
+.main .container .row .col .imgAreas {
   width: 300px;
   height: 350px;
   margin-top: 50px;
 }
-.main div .imgAreas:hover {
+.main .container .row .col .imgAreas:hover {
   opacity: 60%;
 }
-.main div .parrafoAreasPractica {
-  margin-top: 30px;
-  font-family: var(caligrafia-generica);
-  font-weight: bold;
-  letter-spacing: 5px;
-  margin-left: 5px;
-  margin-top: 5px;
-  font-size: 20px;
-  color: #f2f2f2;
-  text-align: justify;
-  background-color: rgba(246, 247, 250, 0.226);
-  height: 150px;
-  display: flex;
-  align-items: baseline;
-}
-.main div .imgAreas {
-  width: 300px;
-  height: 350px;
-  margin-top: 50px;
-}
-.main div .imgAreas:hover {
-  opacity: 60%;
-}
-.main div .parrafoAreasPractica {
+.main .container .row .col .parrafoAreasPractica {
   margin-top: 30px;
   font-family: var(caligrafia-generica);
   font-weight: bold;
@@ -351,7 +328,7 @@ main .contenedorGaleria .row2 .col .parrafoImgAlicia {
   font-weight: bold;
 }
 
-.colLaboral p {
+.container .row .colLaboral p {
   margin-top: 30px;
   font-family: var(caligrafia-generica);
   font-weight: bold;
@@ -362,22 +339,25 @@ main .contenedorGaleria .row2 .col .parrafoImgAlicia {
   color: #0c0d0d;
   text-align: justify;
   background-color: rgba(246, 247, 250, 0.226);
-  margin-right: 20px;
+  margin-right: 5%;
+  margin-left: 200px;
 }
-@media screen and (max-width: 412px) {
-  .colLaboral p {
-    margin-right: 5%;
-    margin-left: 5%;
+@media screen and (max-width: 450px) {
+  .container .row .colLaboral p {
+    width: 300px;
+    height: 350px;
+    margin-top: 90px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
-
-.col .imgDeLaboral {
+.container .row .col .imgDeLaboral {
   width: 600px;
   height: 400px;
   border-radius: 1%;
 }
-@media screen and (max-width: 412px) {
-  .col .imgDeLaboral {
+@media screen and (max-width: 450px) {
+  .container .row .col .imgDeLaboral {
     width: 300px;
     height: 350px;
     margin-top: 90px;
@@ -386,11 +366,10 @@ main .contenedorGaleria .row2 .col .parrafoImgAlicia {
     margin-bottom: 10px;
   }
 }
-
-.procedimientosLaborales {
+.container .row .procedimientosLaborales {
   margin-top: 50px;
 }
-.procedimientosLaborales ul li {
+.container .row .procedimientosLaborales ul li {
   margin-top: 30px;
   font-family: var(caligrafia-generica);
   font-weight: bold;
@@ -403,15 +382,16 @@ main .contenedorGaleria .row2 .col .parrafoImgAlicia {
   background-color: rgba(246, 247, 250, 0.226);
 }
 @media screen and (max-width: 412px) {
-  .procedimientosLaborales ul li {
+  .container .row .procedimientosLaborales ul li {
     margin-right: 5%;
     margin-left: 5%;
   }
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 450px) {
   .container .row .colSucesiones h1 {
-    width: 350px !important;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 .container .row .colSucesiones p {
@@ -439,7 +419,7 @@ main .contenedorGaleria .row2 .col .parrafoImgAlicia {
   height: 400px;
   border-radius: 1%;
 }
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 450px) {
   .container .row .col .imagensSucesiones {
     width: 300px;
     height: 350px;

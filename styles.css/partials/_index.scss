@@ -13,8 +13,8 @@
     font-size: 30px;
     display: flex;
     align-items: center;
-    @media screen and (max-width: 412px) {
-      width: 320px;
+    @media screen and (max-width: 450px) {
+      width: 340px;
       height: 700px;
       margin-top: 90px;
       margin-left: 5%;
@@ -29,7 +29,7 @@
       margin-right: 70px;
       margin-left: 70px;
       height: 200px;
-      @media screen and (max-width: 412px) {
+      @media screen and (max-width: 450px) {
         @include parrafo($size: 22px, $color: #f2f2f2);
         width: 320px;
         height: 600px;
@@ -44,36 +44,24 @@
       padding-right: 30px;
     }
   }
-  div {
-    .imgAreas {
-      width: 300px;
-      height: 350px;
-      margin-top: 50px;
-      &:hover {
-        opacity: 60%;
+  .container {
+    .row {
+      .col {
+        .imgAreas {
+          width: 300px;
+          height: 350px;
+          margin-top: 50px;
+          &:hover {
+            opacity: 60%;
+          }
+        }
+        .parrafoAreasPractica {
+          @include parrafo($size: 20px, $color: #f2f2f2);
+          height: 150px;
+          display: flex;
+          align-items: baseline;
+        }
       }
-    }
-    .parrafoAreasPractica {
-      @include parrafo($size: 20px, $color: #f2f2f2);
-      height: 150px;
-      display: flex;
-      align-items: baseline;
-    }
-  }
-  div {
-    .imgAreas {
-      width: 300px;
-      height: 350px;
-      margin-top: 50px;
-      &:hover {
-        opacity: 60%;
-      }
-    }
-    .parrafoAreasPractica {
-      @include parrafo($size: 20px, $color: #f2f2f2);
-      height: 150px;
-      display: flex;
-      align-items: baseline;
     }
   }
 }
