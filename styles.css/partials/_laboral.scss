@@ -5,10 +5,6 @@
   p {
     @include parrafo($size: 20px, $color: #0c0d0d);
     margin-right: 20px;
-    @media screen and (max-width: 412px) {
-      margin-right: 5%;
-      margin-left: 5%;
-    }
   }
 }
 
@@ -18,12 +14,8 @@
     height: 400px;
     border-radius: 1%;
     @media screen and (max-width: 412px) {
-      width: 300px;
-      height: 350px;
-      margin-top: 90px;
-      margin-left: 10%;
-      margin-right: 10%;
-      margin-bottom: 10px;
+      max-width: 100%;
+      display: inline-block;
     }
   }
 }
