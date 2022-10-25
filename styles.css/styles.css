@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(216, 220, 220);
+  background-color: rgba(200, 208, 208, 0.577);
 }
 
 main .contenedorGaleria .row2 .col .imgAlicia, main .contenedorGaleria .row2 .col .imgDenny, main .contenedorGaleria .row2 .col .imgkim, main .contenedorGaleria .row2 .col .imgJimmy {
@@ -39,7 +39,7 @@ main .contenedorGaleria .row2 .col .imgAlicia:hover, main .contenedorGaleria .ro
   height: 170px;
   margin-bottom: 100px;
 }
-.header .header__logoEstudio {
+.header nav a .header__logoEstudio {
   border-radius: 15px;
   width: 250px;
   height: 100px;
