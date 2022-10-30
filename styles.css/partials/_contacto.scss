@@ -3,26 +3,24 @@
     .col {
       @media screen and (max-width: 412px) {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
+        align-items: flex-start;
       }
       h1 {
         @extend %h1;
-        @media screen and (max-width: 320px) {
+        text-align: left;
+        @media screen and (max-width: 412px) {
           text-align: left;
         }
       }
       .imagenHablemos {
         border-radius: 1%;
-        width: 500px;
+        width: 400px;
         height: 600px;
-        @media screen and (max-width: 450px) {
-          width: 400px;
+
+        @media screen and (max-width: 412px) {
+          width: 380px;
           height: 500px;
-        }
-        @media screen and (max-width: 320px) {
-          width: 300px;
-          height: 200px;
         }
       }
     }
@@ -56,7 +54,7 @@
       margin-top: 20px;
       margin-left: 20px;
       @media screen and (max-width: 450px) {
-        width: 380px;
+        width: 300px;
         margin-top: 100px;
       }
       div {
