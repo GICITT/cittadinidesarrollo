@@ -509,7 +509,7 @@ main .container .row .col .imagensSucesiones {
   main .container .row .col .imagensSucesiones {
     width: 300px;
     height: 350px;
-    margin-top: 30px;
+    margin-top: 90px;
     margin-left: 15%;
     margin-right: 10%;
     margin-bottom: 10px;
@@ -561,9 +561,11 @@ main .container .row .documentacion ul li {
 @media screen and (max-width: 412px) {
   .contenedorDivorcio .rowDivorcio .colDivorcio .imgDivorcio {
     width: 300px;
-    height: 300px;
+    height: 350px;
+    margin-top: 90px;
+    margin-left: 15%;
     margin-right: 10%;
-    margin-left: 10%;
+    margin-bottom: 10px;
   }
 }
 .contenedorDivorcio .rowDivorcioVariantes .colComunAcuerdo .parrafoComunAcuerdo {
